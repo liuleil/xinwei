@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resultCell" id="gTV-IL-0wX" customClass="SearchResultCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="207"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beijing.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3rM-8b-uiG">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="207"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-wO-4WW">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="207"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西金山毒霸杰卡斯上的发送到阿斯蒂芬" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puk-U0-lIx">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="207"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Itd-wO-4WW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5hX-Wk-34A"/>
+                <constraint firstAttribute="trailing" secondItem="Itd-wO-4WW" secondAttribute="trailing" id="6q5-NR-Shz"/>
+                <constraint firstItem="puk-U0-lIx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GJo-WM-Rbd"/>
+                <constraint firstItem="3rM-8b-uiG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NZB-i7-Kiw"/>
+                <constraint firstAttribute="trailing" secondItem="puk-U0-lIx" secondAttribute="trailing" id="VbJ-Ts-FCN"/>
+                <constraint firstAttribute="trailing" secondItem="3rM-8b-uiG" secondAttribute="trailing" id="hHE-WF-Php"/>
+                <constraint firstItem="Itd-wO-4WW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iXQ-gQ-dtN"/>
+                <constraint firstItem="3rM-8b-uiG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jGz-Lz-HWG"/>
+                <constraint firstItem="puk-U0-lIx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kBP-I0-f9d"/>
+                <constraint firstAttribute="bottom" secondItem="puk-U0-lIx" secondAttribute="bottom" id="nRS-di-ZiC"/>
+                <constraint firstAttribute="bottom" secondItem="Itd-wO-4WW" secondAttribute="bottom" id="uqs-Ay-Ajy"/>
+                <constraint firstAttribute="bottom" secondItem="3rM-8b-uiG" secondAttribute="bottom" id="xUT-Sj-L3l"/>
+            </constraints>
+            <size key="customSize" width="279" height="207"/>
+            <connections>
+                <outlet property="backImage" destination="3rM-8b-uiG" id="ROk-B2-wtY"/>
+                <outlet property="newsTitle" destination="puk-U0-lIx" id="xQB-w7-rfH"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="-3.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="beijing.jpg" width="650" height="366"/>
+    </resources>
+</document>

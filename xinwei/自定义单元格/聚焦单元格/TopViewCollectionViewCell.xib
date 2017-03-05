@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="topNews" id="gTV-IL-0wX" customClass="TopViewCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="173"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beijing.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EhS-fU-StA">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="173"/>
+                    </imageView>
+                    <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAq-Kj-fTK">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="173"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国开闸放水27天解救越南旱灾" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsU-et-CoV">
+                        <rect key="frame" x="0.0" y="20" width="250" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Q8g-Oz-a4n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国网" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIa-eq-xiM">
+                        <rect key="frame" x="0.0" y="152" width="125" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="EHC-CV-1JB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-03-16 07:23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvv-st-cb7">
+                        <rect key="frame" x="125" y="152" width="125" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ORd-Jr-UI7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bvv-st-cb7" secondAttribute="trailing" id="6JK-WS-JwN"/>
+                <constraint firstAttribute="bottom" secondItem="bvv-st-cb7" secondAttribute="bottom" id="7BQ-ah-jec"/>
+                <constraint firstAttribute="bottom" secondItem="sAq-Kj-fTK" secondAttribute="bottom" id="9ad-5m-XL0"/>
+                <constraint firstItem="fsU-et-CoV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AAu-on-eJk"/>
+                <constraint firstItem="EhS-fU-StA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GT7-WB-yGy"/>
+                <constraint firstItem="bvv-st-cb7" firstAttribute="width" secondItem="EhS-fU-StA" secondAttribute="width" multiplier="0.5" id="I1W-mO-etO"/>
+                <constraint firstItem="RIa-eq-xiM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IJg-9D-vl4"/>
+                <constraint firstItem="EhS-fU-StA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IO4-ww-PYw"/>
+                <constraint firstItem="sAq-Kj-fTK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T8v-kg-d59"/>
+                <constraint firstItem="sAq-Kj-fTK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TwJ-VG-nlb"/>
+                <constraint firstAttribute="trailing" secondItem="fsU-et-CoV" secondAttribute="trailing" id="ZTn-gs-Ouu"/>
+                <constraint firstAttribute="trailing" secondItem="EhS-fU-StA" secondAttribute="trailing" id="aT5-a3-qQ8"/>
+                <constraint firstAttribute="bottom" secondItem="RIa-eq-xiM" secondAttribute="bottom" id="bZT-w3-EEZ"/>
+                <constraint firstAttribute="bottom" secondItem="EhS-fU-StA" secondAttribute="bottom" id="nPa-73-59n"/>
+                <constraint firstItem="fsU-et-CoV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="sKq-ed-bJg"/>
+                <constraint firstItem="RIa-eq-xiM" firstAttribute="width" secondItem="EhS-fU-StA" secondAttribute="width" multiplier="0.5" id="u5d-mE-smE"/>
+                <constraint firstAttribute="trailing" secondItem="sAq-Kj-fTK" secondAttribute="trailing" id="zJ0-Kf-w8K"/>
+            </constraints>
+            <size key="customSize" width="250" height="173"/>
+            <connections>
+                <outlet property="backGroundImage" destination="EhS-fU-StA" id="z0g-kL-8r7"/>
+                <outlet property="from" destination="RIa-eq-xiM" id="psc-Xg-zKM"/>
+                <outlet property="time" destination="bvv-st-cb7" id="niw-PO-FLf"/>
+                <outlet property="title" destination="fsU-et-CoV" id="9l2-JL-gfE"/>
+            </connections>
+            <point key="canvasLocation" x="-92" y="-34.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="beijing.jpg" width="650" height="366"/>
+    </resources>
+</document>
